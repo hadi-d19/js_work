@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple calculator</title>
+    <!-- You are designing a simple calculator for a small grocery shop. The shop sells three items: rice, sugar, and wheat.
+Your task is to:
+Create variables for the item names, prices, and quantities purchased.
+Calculate and display the cost for each item (price × quantity).
+Calculate the total bill for the customer.
+Change the quantity of one item and recalculate the total.
+Display the updated total bill.
+Use only what you’ve learned today, and make sure to follow variable naming rules. Output all the values using console.log(). -->
+
+</head>
+<body>
+    <h1>simple calculator for a small grocery shop</h1>
+
+    <script>
+        const item1 = "Rice";
+        const price1 = 60;
+        let quantity1 = 7;
+        
+        const item2 = "Sugar"
+        const price2= 50;
+        let quantity2 = 6;
+
+        const item3 = "Wheat"
+        const price3 = 50;
+        let quantity3 = 4;
+
+        console.log("Bill");
+        
+        let cost1 = price1 * quantity1;
+        let cost2 = price2 * quantity2;
+        let cost3 = price3 * quantity3;
+
+        console.log(item1  +" "+ quantity1 +"Kg" + " = ₹"+cost1);
+        console.log(item2 +" "+ quantity2 +"Kg" + " = ₹"+cost2);
+        console.log(item3 +" "+ quantity3 + "Kg" + " = ₹"+cost3);
+
+        let total_bill = cost1 + cost2 + cost3;
+        console.log("Total Bill = ₹"+total_bill);
+   
+        console.log("Updated Bill")
+        quantity2 = 10;
+        cost2 = price2 * quantity2;
+
+        console.log(item1  +" "+ quantity1 +"Kg" + " = ₹"+cost1);
+        console.log(item2 +" "+ quantity2 +"Kg" + " = ₹"+cost2);
+        console.log(item3 +" "+ quantity3 + "Kg" + " = ₹"+cost3);
+
+        let updated_bill = cost1 + cost2 + cost3;
+        console.log("Updated Bill = ₹"+updated_bill);
+
+    </script>
+</body>
+</html>       
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
